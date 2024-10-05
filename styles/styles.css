@@ -81,6 +81,7 @@ body::-webkit-scrollbar-thumb{
     font-weight: bold;
     font-family: Helvetica, Arial, sans-serif;
     z-index: 100;
+    cursor: pointer;
 }
 #registerButtonDiv::before{
     content: '';

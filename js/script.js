@@ -33,3 +33,8 @@ showMenuBtn.addEventListener('click', ()=>{
         showMenuBtn.classList.add("shown");
     }
 })
+
+const registerButton = document.getElementById("registerButtonDiv");
+registerButton.addEventListener("click", ()=>{
+    window.open("https://forms.gle/a2F854fL54QmoMjh6", "_blank");
+});
