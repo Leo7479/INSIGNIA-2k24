@@ -9,6 +9,7 @@ header{
     position: fixed;
     padding: 20px;
     z-index: 101;
+    backdrop-filter: blur(20px);
 }
 header img{
     position: relative;
@@ -73,6 +74,10 @@ header nav ul li{
             transition: all 0.3s ease-in-out;
         }
         z-index: 102;
+    }
+    header{
+        backdrop-filter: unset;
+        background: rgb(21, 21, 21, 21);
     }
     header nav{
         width: 100vw;

@@ -58,12 +58,13 @@ article#homeScreen #mainContainer div p{
     top: 20px;
 }
 .left{
-    left: -10px;
+    left: -40px;
 }
 .right{
-    left: 10px;
+    left: 40px;
 }
-.getUp, .getDown{
+.getUp{
+    left: 0;
     top: 0;
     opacity: 1;
 }

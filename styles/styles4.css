@@ -1,0 +1,28 @@
+/* Logo Section */
+#collegeLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: fit-content;
+    padding: 20px;
+    margin: 15px 0;
+}
+#collegeLogo div.mainContainer{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & p{
+        color: white;
+        font-size: 1.8rem;
+        transition: all 0.4s ease-in-out;
+        width: 60%;
+        text-align: justify;
+        text-wrap: wrap;
+    }
+    & img{
+        width: 300px;
+        transition: all 0.4s ease-in-out;
+    }
+}
