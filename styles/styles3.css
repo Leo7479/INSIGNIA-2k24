@@ -1,0 +1,121 @@
+/* Home Screen Section */
+article#homeScreen{
+    display: flex;
+    width: 95vw;
+    height: 100vh;
+    margin: auto;
+    justify-content: center;
+    overflow-x: hidden;
+}
+article#homeScreen #mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+div#mainContainer div{
+    position: relative;
+    background-color: rgb(20, 20, 20);
+    /* background-color: red; */
+    padding: 15px 15px 25px 15px;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+article#homeScreen #mainContainer div img{
+    margin-bottom: 25px;
+    scale: 1;
+    transition: all 0.5s ease-in-out;
+    width: 600px;
+}
+article#homeScreen #mainContainer div p{
+    display: inline-block;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    transition: all 0.8s ease-in-out;
+    text-align: justify;
+    & span{
+        font-size: 1.5rem;
+        font-weight: bolder;
+        color: #e701ea;
+        cursor: pointer;
+        &:hover{
+            color: #02e7e7;
+        }
+    }
+}
+.animate{
+    opacity: 0.2;
+    position: relative;
+}
+.up{
+    top: -20px;
+}
+.down{
+    top: 20px;
+}
+.left{
+    left: -10px;
+}
+.right{
+    left: 10px;
+}
+.getUp, .getDown{
+    top: 0;
+    opacity: 1;
+}
+article#homeScreen div#mainContainer div:first-child:before{
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 50px;
+    top: -15px;
+    left: -15px;
+    background: linear-gradient(to right, #e701ea, #02e7e7);
+    z-index: -1;
+}
+article#homeScreen div#mainContainer div:first-child:after{
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 50px;
+    bottom: -15px;
+    right: -15px;
+    background: linear-gradient(to left, #e701ea, #02e7e7);
+    z-index: -1;
+}
+
+@media only screen and (max-width: 1200px){
+    #mainContainer{
+        flex-direction: column;
+        row-gap: 40px;
+    }
+    article#homeScreen div#mainContainer div{
+        width: 90vw;
+    }
+    
+    article#homeScreen div#videoContainer{
+        width: 95vw;
+    }
+    article#homeScreen div#videoContainer video{
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 600px){
+    #mainContainer{
+        flex-direction: column;
+        row-gap: 40px;
+    }
+    article#homeScreen div#mainContainer div img{
+        width: 350px;
+    }
+    article#homeScreen div#mainContainer div p{
+        font-size: 0.8rem;
+        & span{
+            font-size: 1rem;
+        }
+    }
+}
