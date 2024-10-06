@@ -13,6 +13,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: rgb(100,100,100);
+    padding: 10px 15px;
+    box-sizing:content-box;
+    border-radius: 20px;
     & p{
         color: white;
         font-size: 1.8rem;
@@ -22,6 +26,7 @@
         text-wrap: wrap;
     }
     & img{
+        display: inline-block;
         width: 300px;
         transition: all 0.4s ease-in-out;
     }

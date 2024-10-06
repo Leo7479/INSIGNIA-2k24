@@ -110,6 +110,9 @@ article#homeScreen div#mainContainer div:first-child:after{
         flex-direction: column;
         row-gap: 40px;
     }
+    article#homeScreen{
+        height: 80vh;
+    }
     article#homeScreen div#mainContainer div img{
         width: 350px;
     }

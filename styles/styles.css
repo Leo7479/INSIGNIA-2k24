@@ -115,4 +115,10 @@ body::-webkit-scrollbar-thumb{
     }
 }
 
-
+@media screen and (max-width: 800px){
+    #registerButtonDiv{
+        width: 100px;
+        height: 90px;
+        font-size: 1.1rem;
+    }
+}
