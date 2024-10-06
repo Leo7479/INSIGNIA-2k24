@@ -65,3 +65,18 @@ article#aboutSection div#mainContainer div#images{
         }
     }
 }
+
+@media only screen and (max-width: 800px){
+    article#aboutSection div#mainContainer{
+        & div#images{
+            width: 250px;
+        }
+        & div#writeup{
+            font-size: 0.9rem;
+            gap: 10px;
+            & p b{
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
