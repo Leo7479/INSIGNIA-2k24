@@ -1,5 +1,7 @@
 /* Home Screen Section */
 article#homeScreen{
+    position: relative;
+    top: 10vh;
     display: flex;
     width: 95vw;
     height: 100vh;
@@ -13,7 +15,7 @@ article#homeScreen #mainContainer{
     align-items: center;
     column-gap: 20px;
 }
-div#mainContainer div{
+article#homeScreen div#mainContainer div{
     position: relative;
     background-color: rgb(20, 20, 20);
     /* background-color: red; */
@@ -24,6 +26,7 @@ div#mainContainer div{
     justify-content: center;
     align-items: center;
 }
+
 article#homeScreen #mainContainer div img{
     margin-bottom: 25px;
     scale: 1;
@@ -90,7 +93,7 @@ article#homeScreen div#mainContainer div:first-child:after{
 }
 
 @media only screen and (max-width: 1200px){
-    #mainContainer{
+    article#homeScreen div#mainContainer{
         flex-direction: column;
         row-gap: 40px;
     }
