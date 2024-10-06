@@ -6,10 +6,7 @@ setInterval(()=>{
     loaderSpan[jumpCounter].classList.add('jump');
 },200);
 
-window.addEventListener('load', ()=>{
-    const splashDiv = document.getElementById('splash');
-    splashDiv.style.display="none";
-})
+
 
 const observer = new IntersectionObserver((entries)=>{
     entries.forEach((entry)=>{
@@ -19,7 +16,7 @@ const observer = new IntersectionObserver((entries)=>{
     })
 })
 const animatable = document.querySelectorAll(".animate");
-animatable.forEach((a)=>{observer.observe(a)});
+
 
 const showMenuBtn = document.getElementsByClassName("showMenu")[0];
 const menu = document.getElementsByTagName("nav")[0];
@@ -35,6 +32,12 @@ showMenuBtn.addEventListener('click', ()=>{
 })
 
 const registerButton = document.getElementById("registerButtonDiv");
-registerButton.addEventListener("click", ()=>{
-    window.open("https://forms.gle/a2F854fL54QmoMjh6", "_blank");
-});
+
+window.addEventListener('load', ()=>{
+    const splashDiv = document.getElementById('splash');
+    splashDiv.style.display="none";
+    animatable.forEach((a)=>{observer.observe(a)});
+    registerButton.addEventListener("click", ()=>{
+        window.open("https://forms.gle/a2F854fL54QmoMjh6", "_blank");
+    });
+})
