@@ -127,6 +127,7 @@ article#homeScreen div#mainContainer div:first-child:after{
     }
     article#homeScreen{
         min-height: 80vh;
+        padding-top: 10px;
     }
     article#homeScreen div#mainContainer div img{
         width: 300px;

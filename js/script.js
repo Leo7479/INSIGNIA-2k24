@@ -41,3 +41,10 @@ window.addEventListener('load', ()=>{
         window.open("https://forms.gle/a2F854fL54QmoMjh6", "_blank");
     });
 })
+
+const navLi = document.getElementsByClassName("navLi");
+for(let i=0;i<navLi.length;i++){
+    navLi[i].addEventListener('click', ()=>{
+        showMenuBtn.click();
+    });
+}
