@@ -112,6 +112,7 @@ article#homeScreen div#mainContainer div:first-child:after{
     }
     article#homeScreen div#videoContainer video{
         width: 90%;
+        height: 550px;
     }
 }
 @media only screen and (max-width: 1085px){
@@ -135,5 +136,9 @@ article#homeScreen div#mainContainer div:first-child:after{
         & span{
             font-size: 1rem;
         }
+    }
+    article#homeScreen div#videoContainer video{
+        width: 90%;
+        height: 450px;
     }
 }

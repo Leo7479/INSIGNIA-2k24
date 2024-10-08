@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+article{
+    position: relative;
+    top: 15vh;
+}
 #splash{
     width: 100vw;
     height: 100vh;
