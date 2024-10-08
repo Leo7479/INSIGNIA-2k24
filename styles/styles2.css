@@ -15,6 +15,7 @@ header img{
     position: relative;
     max-width: 300px;
     min-width: 60px;
+    width: 100%;
 }
 header div.showMenu{
     display: none;
@@ -115,10 +116,5 @@ header nav ul li{
             transform: translateY(5px) rotateZ(-40deg);
             transform-origin: left;
         }
-    }
-}
-@media only screen and (max-width: 600px){
-    header img{
-        width: 180px;
     }
 }
