@@ -4,7 +4,7 @@ article#homeScreen{
     top: 10vh;
     display: flex;
     width: 95vw;
-    height: 100vh;
+    min-height: 100vh;
     margin: auto;
     justify-content: center;
     overflow-x: hidden;
@@ -125,7 +125,7 @@ article#homeScreen div#mainContainer div:first-child:after{
         row-gap: 40px;
     }
     article#homeScreen{
-        height: 80vh;
+        min-height: 80vh;
     }
     article#homeScreen div#mainContainer div img{
         width: 300px;
