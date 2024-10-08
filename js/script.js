@@ -48,3 +48,16 @@ for(let i=0;i<navLi.length;i++){
         showMenuBtn.click();
     });
 }
+
+const knowmorebtn = document.getElementsByClassName("knowmorebtn");
+for(let i=0;i<knowmorebtn.length;i++){
+    knowmorebtn[i].addEventListener('click', (e)=>{
+        e.target.parentElement.parentElement.classList.add("rotate");
+    })
+}
+const knowlessbtn = document.getElementsByClassName("knowlessbtn");
+for(let i=0;i<knowmorebtn.length;i++){
+    knowlessbtn[i].addEventListener('click', (e)=>{
+        e.target.parentElement.parentElement.classList.remove("rotate");
+    })
+}
