@@ -1,5 +1,6 @@
 article#aboutSection{
     background: rgb(70, 70, 70);
+    padding: 20px 0;
     width: 100vw;
     height: max-content;
 }
