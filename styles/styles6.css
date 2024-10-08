@@ -32,6 +32,7 @@ article#roundSection div#mainContainer div.card{
     transition: transform 0.5s ease-in-out;
     background: rgb(70, 70, 70);
     border-radius: 20px;
+    box-shadow: 0 5px 0px 5px rgb(34, 34, 34);
     h2{
         font-size: 2rem;
         background: linear-gradient(120deg,white, #02e7e7 60%, white);
