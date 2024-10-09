@@ -61,3 +61,17 @@ for(let i=0;i<knowmorebtn.length;i++){
         e.target.parentElement.parentElement.classList.remove("rotate");
     })
 }
+document.querySelectorAll('.scroll-link').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault(); // Prevent the default anchor link behavior
+      const targetId = this.getAttribute('href').substring(1); // Get the target ID (without the '#')
+      const targetElement = document.getElementById(targetId); // Get the target element
+
+      // Scroll the target element into the center of the viewport
+      targetElement.scrollIntoView({
+        behavior: 'smooth',  // Smooth scroll
+        block: 'center'      // Align element to the center of the screen
+      });
+    });
+  });
+

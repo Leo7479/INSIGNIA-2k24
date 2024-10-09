@@ -8,7 +8,7 @@ article#roundSection{
     justify-content: center;
     align-items: center;
     gap: 25px;
-    & h1{
+    & h2{
         font-size: 3rem;
         color: white;
     }
