@@ -67,7 +67,7 @@ const rect = contactSection.getBoundingClientRect()
 
 const first = document.getElementsByClassName("first")[0];
 const widthOfMemberCard = first.getBoundingClientRect().width;
-const totalMembers = document.getElementsByClassName("contactCard");
+const totalMembers = document.getElementsByClassName("member");
 
 const numberOfMembersSeenAtOnce = Math.floor(rect.width / widthOfMemberCard);
 

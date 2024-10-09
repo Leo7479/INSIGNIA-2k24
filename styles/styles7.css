@@ -8,6 +8,7 @@ article#contactSection{
     gap: 25px;
     overflow-x : hidden;
     overflow-y: hidden;
+    height: max-content;
 }
 article#contactSection h2{
     color: white;
@@ -15,7 +16,7 @@ article#contactSection h2{
     width: 100%;
     text-align: center;
 }
-article#contactSection div#mainContainer{
+article#contactSection div#mainContainer, article#contactSection div#contactUs{
     height: 400px;
     position: relative;
     display: flex;
@@ -32,7 +33,7 @@ article#contactSection div#mainContainer{
         background-color: aqua;
     }
 }
-article#contactSection div#mainContainer div.contactCard{
+article#contactSection div#mainContainer div.contactCard, article#contactSection div#contactUs div.contactCard{
     width: 350px;
     padding: 20px;
     border-radius: 10px;
@@ -50,8 +51,44 @@ article#contactSection div#mainContainer div.contactCard{
         margin-left: 0%;
     }
 }
+article#contactSection div#contactUs{
+    height: unset;
+    gap: 10px;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+    & div.contactCard{
+        width: 350px;
+        position: relative;
+        & button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: green;
+            width: 70px;
+            height: 70px;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        & button img{
+            display: inline-block;
+            margin: 0;
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
 @media only screen and (max-width: 800px){
     article#contactSection div#mainContainer{
         left: 0%;
+    }
+    article#contactSection div#contactUs{
+        flex-direction: column;
     }
 }
