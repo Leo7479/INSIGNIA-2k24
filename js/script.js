@@ -61,17 +61,22 @@ for(let i=0;i<knowmorebtn.length;i++){
         e.target.parentElement.parentElement.classList.remove("rotate");
     })
 }
-document.querySelectorAll('.scroll-link').forEach(link => {
-    link.addEventListener('click', function(e) {
-      e.preventDefault(); // Prevent the default anchor link behavior
-      const targetId = this.getAttribute('href').substring(1); // Get the target ID (without the '#')
-      const targetElement = document.getElementById(targetId); // Get the target element
 
-      // Scroll the target element into the center of the viewport
-      targetElement.scrollIntoView({
-        behavior: 'smooth',  // Smooth scroll
-        block: 'center'      // Align element to the center of the screen
-      });
-    });
-  });
+const contactSection = document.getElementById("contactSection");
+const rect = contactSection.getBoundingClientRect()
 
+const first = document.getElementsByClassName("first")[0];
+const widthOfMemberCard = first.getBoundingClientRect().width;
+const totalMembers = document.getElementsByClassName("contactCard").length;
+
+const numberOfMembersSeenAtOnce = Math.floor(rect.width / widthOfMemberCard);
+
+const totalScrolls = totalMembers - 1;
+const displacementValue = widthOfMemberCard+25;
+let scrollCounter = 0;
+
+setInterval(()=>{
+    let scrollLeft = scrollCounter * displacementValue;
+    first.style.marginLeft = "-"+(scrollLeft)+"px";
+    scrollCounter = (scrollCounter + 1) % (totalScrolls+1);
+}, 1500);

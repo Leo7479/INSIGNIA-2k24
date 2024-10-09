@@ -69,6 +69,7 @@ article#aboutSection div#mainContainer div#images{
 
 @media only screen and (max-width: 800px){
     article#aboutSection div#mainContainer{
+        flex-direction: column;
         & div#images{
             width: 250px;
         }
