@@ -61,16 +61,17 @@ article#homeScreen #mainContainer div p{
     top: 20px;
 }
 .left{
-    left: -40px;
+    left: -15px;
 }
 .right{
-    left: 40px;
+    left: 15px;
 }
 .getUp{
     left: 0;
     top: 0;
     opacity: 1;
 }
+
 article#homeScreen div#mainContainer div:first-child{
     max-width: 700px;
     & img{
