@@ -12,7 +12,7 @@ article#contactSection{
 }
 article#contactSection h2{
     color: white;
-    font-size: 2rem;
+    font-size: 3rem;
     width: 100%;
     text-align: center;
 }
@@ -42,6 +42,9 @@ article#contactSection div#mainContainer div.contactCard, article#contactSection
     cursor: pointer;
     background-color: rgb(40, 40, 40);
     transition: all 0.5s ease-in-out;
+    & h2{
+        font-size: 2rem;
+    }
     & img{
         width: 100%;
         border-radius: 10px;
@@ -64,7 +67,8 @@ article#contactSection div#contactUs{
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: green;
+            background: transparent;
+            backdrop-filter: blur(20px);
             width: 70px;
             height: 70px;
             position: absolute;
@@ -73,22 +77,36 @@ article#contactSection div#contactUs{
             transform: translateY(-50%);
             border-top-left-radius: 10px;
             border-bottom-left-radius: 10px;
-            border: none;
-            cursor: pointer;
+            border: 1px solid black;
+            border-right: none;
+            cursor: pointer;    
         }
         & button img{
             display: inline-block;
             margin: 0;
             width: 40px;
             height: 40px;
+            filter: invert(68%) sepia(60%) saturate(445%) hue-rotate(85deg) brightness(90%) contrast(90%);
         }
     }
 }
 @media only screen and (max-width: 800px){
     article#contactSection div#mainContainer{
         left: 0%;
+        & div.contactCard{
+            width: 90vw;
+            & h2{
+                font-size: 1.4rem;
+            }
+        }
     }
     article#contactSection div#contactUs{
         flex-direction: column;
+        & div.contactCard{
+            width: 100%;
+            & h2{
+                font-size: 1.4rem;
+            }
+        }
     }
 }

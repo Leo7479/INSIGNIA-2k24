@@ -76,7 +76,6 @@ const displacementValue = widthOfMemberCard+25;
 let scrollCounter = 1;
 
 setInterval(()=>{
-    console.log(scrollCounter);
     let scrollLeft = scrollCounter * displacementValue;
     first.style.marginLeft = "-"+(scrollLeft)+"px";
     scrollCounter = (scrollCounter + 1) % (totalScrolls+1);
