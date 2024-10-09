@@ -67,15 +67,16 @@ const rect = contactSection.getBoundingClientRect()
 
 const first = document.getElementsByClassName("first")[0];
 const widthOfMemberCard = first.getBoundingClientRect().width;
-const totalMembers = document.getElementsByClassName("contactCard").length;
+const totalMembers = document.getElementsByClassName("contactCard");
 
 const numberOfMembersSeenAtOnce = Math.floor(rect.width / widthOfMemberCard);
 
-const totalScrolls = totalMembers - 1;
+const totalScrolls = totalMembers.length - 1;
 const displacementValue = widthOfMemberCard+25;
-let scrollCounter = 0;
+let scrollCounter = 1;
 
 setInterval(()=>{
+    console.log(scrollCounter);
     let scrollLeft = scrollCounter * displacementValue;
     first.style.marginLeft = "-"+(scrollLeft)+"px";
     scrollCounter = (scrollCounter + 1) % (totalScrolls+1);

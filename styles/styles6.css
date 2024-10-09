@@ -64,10 +64,11 @@ article#roundSection div#mainContainer div.card{
     }
     & span{
         cursor: pointer;
-        padding: 5px;
         border: 1px solid #e701ea;
         background-color: #e701ea;
         color: white;
+        border-radius: 20px;
+        padding: 10px;
     }
     &  div.front img{
         width: 100%;
