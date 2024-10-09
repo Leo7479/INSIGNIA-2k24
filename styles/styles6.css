@@ -23,7 +23,7 @@ article#roundSection div#mainContainer{
     gap: 25px;
 }
 article#roundSection div#mainContainer div.card{
-    max-width: 450px;
+    max-width: 100%;
     min-height: 200px;
     transform-style:preserve-3d;
     perspective: 2500px;
@@ -70,7 +70,7 @@ article#roundSection div#mainContainer div.card{
         color: white;
     }
     &  div.front img{
-        width: 300px;
+        width: 100%;
     }
     &.rotate{
         transform: rotateY(180deg);
