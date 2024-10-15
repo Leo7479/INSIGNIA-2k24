@@ -14,6 +14,7 @@ footer{
 footer div#mainContainer{
     width: 100%;
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-around;
     align-items: center;
     font-size: 1.3rem;
@@ -70,7 +71,7 @@ footer div.leftSide ul a:hover li{
 }
 @media only screen and (max-width: 800px){
     footer div#mainContainer{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     footer div#mainContainer div.leftSide, div.rightSide{
         width: 90%;

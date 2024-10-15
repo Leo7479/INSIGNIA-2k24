@@ -45,8 +45,15 @@ article#contactSection div#mainContainer div.contactCard, article#contactSection
     & h2{
         font-size: 2rem;
     }
-    & img{
+    & div.imageHolder{
         width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    & img{
+        width: 250px;
+        height: 300px;
         border-radius: 10px;
         margin-bottom: 10px;
     }
@@ -80,6 +87,12 @@ article#contactSection div#contactUs{
             border: 1px solid black;
             border-right: none;
             cursor: pointer;    
+        }
+        & div.imageHolder{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         & button img{
             display: inline-block;
