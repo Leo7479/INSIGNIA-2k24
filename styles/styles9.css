@@ -2,10 +2,15 @@ article#sponsorsSection{
     width: 100%;
     padding: 20px;
     background-color: rgb(70, 70, 70);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     & h3{
         font-size: 3rem;
         width: 100%;
         color: white;
+        text-align: center;
     }
 }
 article#sponsorsSection div#mainContainer{
