@@ -33,6 +33,8 @@ article#roundSection div#mainContainer div.card{
     background: rgb(70, 70, 70);
     border-radius: 20px;
     box-shadow: 0 5px 0px 5px rgb(34, 34, 34);
+    backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
 }
 article#roundSection div#mainContainer div.card h2{
     font-size: 2rem;
@@ -58,6 +60,8 @@ article#roundSection div#mainContainer div.card .back{
     top: 0;
     left: 0;
     transform: rotateY(180deg);
+    background-color: rgb(70, 70, 70);
+    border-radius: 20px;
 }
 article#roundSection div#mainContainer div.card .back p{
     color: white;
