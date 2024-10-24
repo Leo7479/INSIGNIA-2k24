@@ -27,6 +27,15 @@
         <span class="loaderspan"></span>
       </div>
     </div>
+    <script>
+      var loaderSpan = document.getElementsByClassName('loaderspan');
+      let jumpCounter = 0;
+      setInterval(()=>{
+          loaderSpan[jumpCounter].classList.remove('jump');
+          jumpCounter = (jumpCounter+1)%4;
+          loaderSpan[jumpCounter].classList.add('jump');
+      },200);
+    </script>
     <header>
       <img loading="eager" src="./assets/images/Insignia Text.png" />
       <input type="checkbox" id="showMenu" hidden>

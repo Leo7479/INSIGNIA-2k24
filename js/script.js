@@ -1,13 +1,3 @@
-var loaderSpan = document.getElementsByClassName('loaderspan');
-let jumpCounter = 0;
-setInterval(()=>{
-    loaderSpan[jumpCounter].classList.remove('jump');
-    jumpCounter = (jumpCounter+1)%4;
-    loaderSpan[jumpCounter].classList.add('jump');
-},200);
-
-
-
 const observer = new IntersectionObserver((entries)=>{
     entries.forEach((entry)=>{
         if(entry.isIntersecting){
