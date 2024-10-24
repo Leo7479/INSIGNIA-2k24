@@ -34,10 +34,8 @@ header nav ul{
     font-size: 1.1rem;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
-header nav ul a{
-    &:not(:last-child){
-        margin-right: 15px;
-    }
+header nav ul a:not(:last-child){
+    margin-right: 15px;
 }
 header nav ul li{
     text-wrap: nowrap;
@@ -47,10 +45,10 @@ header nav ul li{
     padding: 10px;
     cursor: pointer;
     transition: all 0.1s ease-in-out;
-    &:hover{
-        border: 1px solid transparent;
-        background: #e701ea;
-    }
+}
+header nav ul li:hover{
+    border: 1px solid transparent;
+    background: #e701ea;
 }
 
 
@@ -63,21 +61,21 @@ header nav ul li{
         row-gap: 5px;
         position: absolute;
         right: 5%;
-        & span{
-            display: block;
-            width: 40px;
-            height: 3px;
-            background-color: white;
-            margin: unset;
-            &:first-child{
-                top: 0;
-            }
-            &:last-child{
-                bottom: 0;
-            }
-            transition: all 0.3s ease-in-out;
-        }
         z-index: 102;
+    }
+    div.showMenu span{
+        display: block;
+        width: 40px;
+        height: 3px;
+        background-color: white;
+        margin: unset;
+        transition: all 0.3s ease-in-out;
+    }
+    div.showMenu span:first-child{
+        top: 0;
+    }
+    div.showMenu span:last-child{
+        bottom: 0;
     }
     header{
         backdrop-filter: unset;
@@ -107,17 +105,15 @@ header nav ul li{
         right: 0;
         left: 0;
     }
-    div.showMenu.shown{
-        & span:first-child{
-            transform: translateY(-5px) rotateZ(40deg);
-            transform-origin: left;
-        }
-        & span:nth-child(2){
-            visibility: hidden;
-        }
-        & span:last-child{
-            transform: translateY(5px) rotateZ(-40deg);
-            transform-origin: left;
-        }
+    div.showMenu.shown span:first-child{
+        transform: translateY(-5px) rotateZ(40deg);
+        transform-origin: left;
+    }
+    div.showMenu.shown span:nth-child(2){
+        visibility: hidden;
+    }
+    div.showMenu.shown span:last-child{
+        transform: translateY(5px) rotateZ(-40deg);
+        transform-origin: left;
     }
 }

@@ -12,11 +12,11 @@ article#aboutSection h2{
     font-size: 3rem;
     color: white;
     margin-bottom: 20px;
-    & span{
-        background-image: linear-gradient(to right, #02e7e7,#fb00ff,#02e7e7);
-        background-clip: text;
-        color: transparent;
-    }
+}
+article#aboutSection h2 span{
+    background-image: linear-gradient(to right, #02e7e7, #fb00ff, #02e7e7);
+    background-clip: text;
+    color: transparent;
 }
 article#aboutSection div#mainContainer{
     width: 95%;
@@ -25,23 +25,23 @@ article#aboutSection div#mainContainer{
     align-items: center;
     margin: auto;
     position: relative;
-    & div#writeup{
-        max-width: 50%;
-        min-width: 300px;
-        text-align: justify;
-        font-size: 1.3rem;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 20px;
-        transition: all 0.5s ease-in-out;
-    }
-    & div#writeup p{
-        color: white;
-        & b{
-            font-size: 2rem;
-        }
-    }
+}
+article#aboutSection div#mainContainer div#writeup{
+    max-width: 50%;
+    min-width: 300px;
+    text-align: justify;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    transition: all 0.5s ease-in-out;
+}
+article#aboutSection div#mainContainer div#writeup p{
+    color: white;
+}
+article#aboutSection div#mainContainer div#writeup p b{
+    font-size: 2rem;
 }
 
 article#aboutSection div#mainContainer div#images{
@@ -52,34 +52,34 @@ article#aboutSection div#mainContainer div#images{
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 20px;
-    & img{
-        width: 300px;
-        aspect-ratio: 16/11;
-        margin-right: 5px;
-        &:not(:last-child){
-            margin-bottom: 20px;
-        }
-        transition: left 0.5s ease-in-out;
-        border-radius: 10px;
-        &:hover{
-            scale: 1.1;
-            z-index: 10;
-        }
-    }
+}
+article#aboutSection div#mainContainer div#images img{
+    width: 300px;
+    aspect-ratio: 16/11;
+    margin-right: 5px;
+    transition: left 0.5s ease-in-out;
+    border-radius: 10px;
+}
+article#aboutSection div#mainContainer div#images img:not(:last-child){
+    margin-bottom: 20px;
+}
+article#aboutSection div#mainContainer div#images img:hover{
+    scale: 1.1;
+    z-index: 10;
 }
 
 @media only screen and (max-width: 800px){
     article#aboutSection div#mainContainer{
         flex-direction: column;
-        & div#images{
-            width: 250px;
-        }
-        & div#writeup{
-            font-size: 0.9rem;
-            gap: 10px;
-            & p b{
-                font-size: 1.1rem;
-            }
-        }
+    }
+    article#aboutSection div#mainContainer div#images{
+        width: 250px;
+    }
+    article#aboutSection div#mainContainer div#writeup{
+        font-size: 0.9rem;
+        gap: 10px;
+    }
+    article#aboutSection div#maincontainer div#writeup p b{
+        font-size: 1.1rem;
     }
 }

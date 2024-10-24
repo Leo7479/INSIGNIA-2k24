@@ -18,7 +18,6 @@ article#homeScreen #mainContainer{
 article#homeScreen div#mainContainer div{
     position: relative;
     background-color: rgb(20, 20, 20);
-    /* background-color: red; */
     padding: 15px 15px 25px 15px;
     overflow: visible;
     display: flex;
@@ -40,15 +39,16 @@ article#homeScreen #mainContainer div p{
     text-align: justify;
     transition: all 0.8s ease-in-out;
     text-align: justify;
-    & span{
-        font-size: 1.5rem;
-        font-weight: bolder;
-        color: #e701ea;
-        cursor: pointer;
-        &:hover{
-            color: #02e7e7;
-        }
-    }
+}
+article#homeScreen #mainContainer div p span{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #e701ea;
+    transition: all 0.15s ease-in-out;
+    cursor: pointer;
+}
+article#homeScreen #mainContainer div p span:hover{
+    color: #02e7e7;
 }
 .animate{
     opacity: 0.2;
@@ -74,9 +74,9 @@ article#homeScreen #mainContainer div p{
 
 article#homeScreen div#mainContainer div:first-child{
     max-width: 700px;
-    & img{
-        width: 100%;
-    }
+}
+article#homeScreen div#mainContainer div:first-child img{
+    width: 100%;
 }
 article#homeScreen div#mainContainer div:first-child:before{
     content: '';
