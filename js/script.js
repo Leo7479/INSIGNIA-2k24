@@ -75,8 +75,8 @@ const totalScrolls = totalMembers.length - 1;
 const displacementValue = widthOfMemberCard+25;
 let scrollCounter = 1;
 
-// setInterval(()=>{
-//     let scrollLeft = scrollCounter * displacementValue;
-//     first.style.marginLeft = "-"+(scrollLeft)+"px";
-//     scrollCounter = (scrollCounter + 1) % (totalScrolls+1);
-// }, 1500);
+setInterval(()=>{
+    let scrollLeft = scrollCounter * displacementValue;
+    first.style.marginLeft = "-"+(scrollLeft)+"px";
+    scrollCounter = (scrollCounter + 1) % (totalScrolls+1);
+}, 1500);
