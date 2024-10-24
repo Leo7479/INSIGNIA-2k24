@@ -57,10 +57,13 @@ article#sponsorsSection div#mainContainer div.card{
         top: 0;
         left: 0;
         transform: rotateY(180deg);
+        border-radius: 20px;
+        background-color: rgb(70, 70, 70);
         & p{
             color: white;
             font-size: 1.1rem;
         }
+
     }
     & span{
         cursor: pointer;
