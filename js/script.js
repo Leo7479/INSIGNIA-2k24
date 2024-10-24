@@ -23,14 +23,14 @@ showMenuBtn.addEventListener('click', ()=>{
 
 const registerButton = document.getElementById("registerButtonDiv");
 
-window.addEventListener('load', ()=>{
+setTimeout(()=>{
     const splashDiv = document.getElementById('splash');
     splashDiv.style.display="none";
     animatable.forEach((a)=>{observer.observe(a)});
     registerButton.addEventListener("click", ()=>{
         window.open("https://forms.gle/a2F854fL54QmoMjh6", "_blank");
     });
-})
+}, 5000);
 
 const navLi = document.getElementsByClassName("navLi");
 for(let i=0;i<navLi.length;i++){
