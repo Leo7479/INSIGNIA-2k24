@@ -52,7 +52,7 @@ header nav ul li:hover{
 }
 
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 950px){
     header div.showMenu{
         display: flex;
         flex-direction: column;
