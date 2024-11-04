@@ -37,6 +37,11 @@ header nav ul{
 header nav ul a:not(:last-child){
     margin-right: 15px;
 }
+header nav ul a:last-child li{
+    background-color: #02e7e7;
+    color: white;
+    border-radius: 20px;
+}
 header nav ul li{
     text-wrap: nowrap;
     border: 1px solid transparent;
@@ -46,9 +51,10 @@ header nav ul li{
     cursor: pointer;
     transition: all 0.1s ease-in-out;
 }
-header nav ul li:hover{
+header nav ul a li:hover{
     border: 1px solid transparent;
-    background: #e701ea;
+    background-color: unset;
+    background-color: #e701ea;
 }
 
 
